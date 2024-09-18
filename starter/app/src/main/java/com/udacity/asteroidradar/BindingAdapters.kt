@@ -49,7 +49,7 @@ fun setAsteroidList(recyclerView: RecyclerView, asteroids: List<Asteroid>?) {
 }
 
 
-@BindingAdapter("pictureOfTheDayDescription")
+@BindingAdapter("setPictureOfTheDayDescription")
 fun setPictureOfTheDayDescription(imageView: ImageView, title: String?){
     imageView.contentDescription = title?.let {
         imageView.context.getString(R.string.nasa_picture_of_day_content_description_format, title)
