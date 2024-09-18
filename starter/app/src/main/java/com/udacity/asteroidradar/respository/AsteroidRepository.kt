@@ -38,7 +38,7 @@ class AsteroidRepository(private val database: AsteroidDatabase) {
 
     suspend fun refreshAsteroids() {
         withContext(Dispatchers.IO) {
-            val asteroids = NwoApi.retrofitService.getAsteroids(getTodayDate())
+            val asteroids = NwoApi.retrofitService.getAsteroids()
             database.asteroidDao.insertAll(*parseAsteroidsJsonResult(JSONObject(asteroids)).asDatabaseModel())
         }
     }
