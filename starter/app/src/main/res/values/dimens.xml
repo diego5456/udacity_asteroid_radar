@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="simple_margin">16dp</dimen>
+    <dimen name="basic_padding">8dp</dimen>
+    <dimen name="list_date_font_size">10sp</dimen>
+    <dimen name="list_id_font_size">15sp</dimen>
+</resources>
